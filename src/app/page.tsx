@@ -51,7 +51,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col md:flex-row w-screen h-screen">
-      <div className="w-full md:w-9/12 h-full" style={{ backgroundColor: "#ecf0f1" }}>
+      <div className="w-full md:w-9/12 h-7/12 md:h-full overflow-y-auto " style={{ backgroundColor: "#ecf0f1" }}>
         {tags.map(tag => (
           <h1
             key={tag.id}
@@ -69,7 +69,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="fixed bottom-5 flex flex-col p-5 bg-white w-full justify-center md:w-3/12 md:right-0 md:top-0">
+      <div className="fixed bottom-0 flex flex-col p-5 h-5/12 bg-white w-full justify-center md:w-3/12 md:right-0 md:top-0">
         <h2 className="text-xl">text:</h2>
         <input
           className="border-2 border-gray-500 rounded-md h-10 text-2xl pl-2 w-full"
